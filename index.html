@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Desktop Nav -->
     <nav id="desktop-nav">
       <div class="logo"><b>Shakibul</b></div>
       <div>
@@ -18,25 +19,38 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <!-- Theme Toggle Button -->
+          <li><button id="theme-btn">🌙</button></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Mobile Nav -->
     <nav id="hamburger-nav">
       <div class="logo"><b>Shakibul</b></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="hamburger-right">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-mobile">
+          <button id="theme-btn-mobile">🌙</button>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <!-- Hamburger -->
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
       </div>
     </nav>
+
+    <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-logo-.png" alt="Shakibul profile picture" />
@@ -60,18 +74,20 @@
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon linkedin-icon"
             onclick="location.href='https://linkedin.com/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon github-icon"
             onclick=" location.href='https://github.com/themdshakibul'"
           />
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -122,6 +138,8 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- Experience Section -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -131,66 +149,42 @@
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>HTML</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>CSS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>Tailwind</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>React</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>Node JS</h3>
                   <p>Intermediate</p>
@@ -202,44 +196,28 @@
             <h2 class="experience-sub-title">Language and Tools</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>Git</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>Git & Github</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>VS Code</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
                 <div>
                   <h3>Figma</h3>
                   <p>Intermediate</p>
@@ -256,6 +234,8 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -280,6 +260,78 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://themdshakibul.github.io/challenge-html-tailwindcss/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/OmniFood.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Omni Food</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/themdshakibul'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://themdshakibul.github.io/Omnifood-Never-Cook/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Yogasan.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Yogasan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/themdshakibul'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://themdshakibul.github.io/Yogasa/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/HeroSpark.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">HeroSpark AI</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/themdshakibul'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://themdshakibul.github.io/HeroSpark/'"
               >
                 Live Demo
               </button>
@@ -342,6 +394,8 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -362,12 +416,14 @@
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
-            class="icon contact-icon"
+            class="icon contact-icon linkedin-icon"
           />
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -381,6 +437,7 @@
       </nav>
       <p>Copyright &#169; 2025 Md Shakibul Islam. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

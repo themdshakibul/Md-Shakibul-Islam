@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -32,7 +32,7 @@
   }
   section,
   .section-container {
-    height: fit-content;
+    height: auto;
   }
   section {
     margin: 0 5%;
@@ -47,29 +47,53 @@
   }
 }
 
+/* Projects Responsive Layout */
+@media screen and (max-width: 900px) {
+  .details-container.color-container {
+    flex: 1 1 45%; /* প্রতি row এ ২টা project */
+    max-width: 100%;
+  }
+}
+
+/* Mobile Responsive (max-width: 600px) */
 @media screen and (max-width: 600px) {
+  /* Contact & Footer auto height */
   #contact,
   footer {
-    height: 40vh;
+    height: auto;
   }
+
+  /* Profile section */
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  /* Profile image */
+  .section__pic-container img {
+    max-width: 250px;
+    height: 250px;
+    display: block;
+    margin: 2rem auto 0;
+    border-radius: 1rem;
+  }
+
+  /* About section */
+  .about-pic {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 1rem;
+  }
+
+  /* Text adjustments */
   article {
     font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -81,16 +105,6 @@
   .logo {
     font-size: 1.5rem;
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
@@ -99,5 +113,34 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  /* Nav */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  /* Footer nav */
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  /* Flex wrap adjustments */
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+
+  /* Projects */
+  .details-container.color-container {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
